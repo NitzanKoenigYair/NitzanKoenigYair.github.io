@@ -3,41 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Details | Nitzan Koenig Yair</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>Collection | Nitzan Koenig Yair</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: #fdfdfc; font-family: 'Inter', sans-serif; color: #111; }
-        nav { padding: 30px 8%; display: flex; justify-content: space-between; align-items: center; }
-        nav a { text-decoration: none; color: #111; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
-        
-        .project-header { padding: 60px 8% 20px; }
-        .project-header h1 { font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 10px; }
-        .project-header p { font-size: 14px; color: #888; text-transform: uppercase; letter-spacing: 2px; }
-
-        .gallery { padding: 40px 8%; display: flex; flex-direction: column; gap: 40px; }
-        .gallery img { width: 100%; height: auto; background: #f7f7f7; }
-
-        footer { padding: 60px 8%; text-align: center; font-size: 10px; color: #bbb; letter-spacing: 2px; }
+        body { background-color: #f5eee6; font-family: 'Inter', sans-serif; color: #1a1a1a; }
+        nav { padding: 40px 5%; display: flex; justify-content: space-between; align-items: center; }
+        nav a { text-decoration: none; color: #111; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+        .project-header { padding: 60px 5% 40px; text-align: center; }
+        .project-header h1 { font-family: 'Playfair Display', serif; font-size: 50px; font-weight: 400; margin-bottom: 10px; }
+        .masonry-container { padding: 0 5% 100px; column-count: 3; column-gap: 20px; }
+        .masonry-item { display: inline-block; width: 100%; margin-bottom: 20px; }
+        .masonry-item img { width: 100%; height: auto; display: block; }
+        @media(max-width: 900px) { .masonry-container { column-count: 2; } }
+        @media(max-width: 600px) { .masonry-container { column-count: 1; } }
     </style>
 </head>
 <body>
     <nav>
-        <a href="../index.html">← Back to Portfolio</a>
-        <div><strong>NITZAN KOENIG YAIR</strong></div>
+        <a href="../index.html">← Return</a>
+        <div style="letter-spacing: 3px; font-size: 13px;">NITZAN KOENIG YAIR</div>
     </nav>
-
     <header class="project-header">
         <h1>Collection Name</h1>
-        <p>Concept & Construction</p>
+        <p style="text-transform: uppercase; letter-spacing: 4px; font-size: 11px; color: #8c837a;">& More</p>
     </header>
-
-    <div class="gallery">
-        <img src="../p1-image1.jpg" alt="Detail 1">
-        <img src="../p1-image2.jpg" alt="Detail 2">
-        <img src="../p1-image3.jpg" alt="Detail 3">
+    <div class="masonry-container">
+        <div class="masonry-item"><img src="../p1-img1.jpg"></div>
+        <div class="masonry-item"><img src="../p1-img2.jpg"></div>
+        <div class="masonry-item"><img src="../p1-img3.jpg"></div>
     </div>
-
-    <footer>© 2026 NITZAN KOENIG YAIR</footer>
 </body>
 </html>
