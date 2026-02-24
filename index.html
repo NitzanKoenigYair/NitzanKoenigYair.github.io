@@ -3,44 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivri | Nitzan Koenig Yair</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>Nitzan Koenig Yair | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: #f5eee6; font-family: 'Inter', sans-serif; color: #1a1a1a; line-height: 1.6; }
-        nav { padding: 40px 5%; display: flex; justify-content: space-between; align-items: center; }
-        nav a { text-decoration: none; color: #111; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
-        .project-header { padding: 60px 5% 80px; text-align: center; }
-        .project-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(40px, 5vw, 64px); font-weight: 400; margin-bottom: 10px; text-transform: capitalize; }
-        .project-header p { font-size: 11px; text-transform: uppercase; letter-spacing: 4px; color: #8c837a; }
-        .masonry-container { padding: 0 5% 100px; column-count: 3; column-gap: 20px; }
-        .masonry-item { display: inline-block; width: 100%; margin-bottom: 20px; transition: opacity 0.4s ease; }
-        .masonry-item img { width: 100%; height: auto; display: block; border-radius: 2px; }
-        .masonry-item:hover { opacity: 0.9; }
-        footer { padding: 80px 5% 40px; text-align: center; font-size: 10px; color: #8c837a; letter-spacing: 2px; }
-        @media(max-width: 900px) { .masonry-container { column-count: 2; } }
-        @media(max-width: 600px) { .masonry-container { column-count: 1; } }
+        body { background-color: #f5eee6; font-family: 'Inter', sans-serif; color: #111; line-height: 1.6; }
+        
+        nav { 
+            position: fixed; 
+            width: 100%; 
+            padding: 30px 8%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background: rgba(245, 238, 230, 0.9); 
+            z-index: 1000; 
+        }
+        nav a { text-decoration: none; color: #111; margin-left: 25px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 8%; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 600; }
+        .hero p { margin-top: 15px; font-size: 14px; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; color: #8c837a; }
+
+        .section { padding: 120px 8%; }
+        .section h2 { font-family: 'Playfair Display', serif; font-size: 40px; margin-bottom: 40px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+        
+        /* Collection Card */
+        .project { text-decoration: none; color: inherit; display: block; overflow: hidden; }
+        .project-img-container { height: 500px; overflow: hidden; background: #eee; }
+        .project img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .project:hover img { transform: scale(1.03); }
+        .project-title { margin-top: 20px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; }
+
+        .about-text { max-width: 700px; font-size: 16px; }
+        footer { text-align: center; padding: 80px 40px; font-size: 11px; color: #8c837a; letter-spacing: 2px; }
+
+        @media(max-width: 768px){ .hero h1 { font-size: 42px; } .project-img-container { height: 400px; } }
     </style>
 </head>
 <body>
+
     <nav>
-        <a href="../index.html">← Return</a>
-        <div style="letter-spacing: 3px; font-size: 13px; font-weight: 500;">NITZAN KOENIG YAIR</div>
+        <div><strong>NITZAN KOENIG YAIR</strong></div>
+        <div>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
-    <header class="project-header">
-        <h1>Ivri</h1>
-        <p>Collection 01</p>
-    </header>
-    <div class="masonry-container">
-        <div class="masonry-item"><img src="../5Y9A0818.jpg"></div>
-        <div class="masonry-item"><img src="../5Y9A0785.jpg"></div>
-        <div class="masonry-item"><img src="../5Y9A0813.jpg"></div>
-        <div class="masonry-item"><img src="../5Y9A0781.jpg"></div>
-        <div class="masonry-item"><img src="../5Y9A0822.jpg"></div>
-        <div class="masonry-item"><img src="../5Y9A0788.jpg"></div>
-        <div class="masonry-item"><img src="../5Y9A0818.jpg"></div>
-        <div class="masonry-item"><img src="../5Y9A0778.jpg"></div>
-    </div>
-    <footer>© 2026 NITZAN KOENIG YAIR</footer>
-</body>
-</html>
+
+    <section class="hero">
+        <h1>Nitzan Koenig Yair</h1>
+        <p>Womenswear Designer | Fashion Student</p>
+    </section>
+
+    <section id="work" class="section">
+        <h2>Selected Work</h2>
+        <div class="grid">
