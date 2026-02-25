@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitzan Koenig Yair | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background-color: #f5eee6; font-family: 'Inter', sans-serif; color: #111; line-height: 1.6; }
         nav { position: fixed; width: 100%; padding: 30px 8%; display: flex; justify-content: space-between; align-items: center; background: rgba(245, 238, 230, 0.9); z-index: 1000; }
         nav a { text-decoration: none; color: #111; margin-left: 25px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
-        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; padding: 0 8%; }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(40px, 8vw, 64px); font-weight: 600; }
-        .section { padding: 40px 8% 120px; }
+        .hero { height: 50vh; display: flex; flex-direction: column; justify-content: center; padding: 0 8%; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 56px); font-weight: 600; }
+        .section { padding: 20px 8% 120px; }
         
-        /* Grid reduced by 25% by narrowing the max-width and min-column size */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 60px; max-width: 1200px; margin: 0 auto; }
+        /* Reduced size grid (approx 25% smaller) */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; max-width: 1100px; margin: 0 auto; }
         .project { text-decoration: none; color: inherit; display: block; overflow: hidden; }
-        .project-img-container { height: 380px; overflow: hidden; background: #eee; }
+        .project-img-container { height: 300px; overflow: hidden; background: #e0d8cf; }
         .project img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
         .project:hover img { transform: scale(1.03); }
-        .project-title { margin-top: 20px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; text-align: center; }
-        
+        .project-title { margin-top: 20px; font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 500; text-align: center; color: #555; }
         footer { text-align: center; padding: 80px 40px; font-size: 10px; color: #8c837a; letter-spacing: 2px; }
     </style>
 </head>
@@ -32,24 +31,9 @@
     </nav>
     <section class="hero">
         <h1>Nitzan Koenig Yair</h1>
-        <p style="letter-spacing: 4px; text-transform: uppercase; font-size: 11px; color: #8c837a; margin-top: 10px;">Fashion Design Portfolio</p>
+        <p style="letter-spacing: 4px; text-transform: uppercase; font-size: 10px; color: #8c837a; margin-top: 10px;">Fashion Design Portfolio</p>
     </section>
     <section id="work" class="section">
         <div class="grid">
             <a href="ready-to-wear/index.html" class="project">
-                <div class="project-img-container"><img src="images/507A9621.jpg" alt="Ready to Wear"></div>
-                <div class="project-title">Ready to Wear</div>
-            </a>
-            <a href="unseen-legacy/index.html" class="project">
-                <div class="project-img-container"><img src="images/WhatsApp Image 2026-02-25 at 01.39.02 (4).jpeg" alt="Unseen Legacy"></div>
-                <div class="project-title">Unseen Legacy — Clara Bohm</div>
-            </a>
-            <a href="yours-ivri/index.html" class="project">
-                <div class="project-img-container"><img src="images/5Y9A0818.jpg" alt="Yours, Ivri"></div>
-                <div class="project-title">Yours, Ivri</div>
-            </a>
-        </div>
-    </section>
-    <footer>© 2026 NITZAN KOENIG YAIR</footer>
-</body>
-</html>
+                <div class="project-
